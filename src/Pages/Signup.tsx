@@ -10,7 +10,7 @@
 //   name:""
 // }
 
-// function Signup() {
+function Signup() {
 
 //   const dispatch = useDispatch();
 //   const [userData, setUserData] = useState(initialState);
@@ -71,9 +71,9 @@
 //         </div>
 //     </DIV>
 //   );
-// }
+}
 
-// export default Signup;
+export default Signup;
 
 // const DIV = styled.div`
 //     width: 100%;
