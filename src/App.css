@@ -3,8 +3,11 @@
   box-sizing: border-box;
 }
 
+
+/**************** Navbar **************************/
+
 .navbox{
-  background-color: #b0c8f7;
+  background-color: #FAFAFA;
 }
 
 
@@ -42,11 +45,380 @@
   margin: auto;
 }
 
-.landing {
-  background-color: #b0c8f7;
+
+
+/********************** Finacial Assistance ***********************/
+
+
+.landingpage {
+ background-color: #FAFAFA;
 }
 
-.landing img{
+.landing {
+  padding-top: 50px;
+  width: 70%;
+  /* background-color: #FAFAFA; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.landing > div {
+  width: 40%;
+}
+
+.landing > div:nth-child(1) img:nth-child(1){
   /* width: 80%; */
-  height: 640px;
+  width: 100%;
+}
+.landing > div:nth-child(1) img:nth-child(2){
+  /* width: 80%; */
+  margin-top: 37px;
+  width: 75%;
+}
+
+.landing > div:nth-child(1) img:nth-child(3){
+  /* width: 80%; */
+  margin-top: 37px;
+  width: 60%;
+  padding-right: 170px;
+}
+
+.landing > div:nth-child(2) img{
+  /* width: 80%; */
+  width: 100%;
+}
+
+
+.landing > div:nth-child(1) button {
+  margin-top: 20px;
+  border-radius: 43px;
+  padding: 13px 25px 13px 25px;
+  /* color: #23A6F0; */
+  /* background-color: #23A6F0; */
+  border: 1px solid #23A6F0;
+}
+
+.get{
+  background-color: #23A6F0;
+  color: #FAFAFA;
+  margin-right: 20px;
+}
+.learn {
+  color: #23A6F0;
+  margin-right: 80px;
+}
+
+
+
+
+/* **************************** Better Strategy ********************************** */
+
+.betterStrategy{
+  margin-top: 160px;
+  margin-bottom: 170px;
+}
+
+.betterStrategy img{
+  width: 40%;
+}
+
+.raisingfund{
+  padding-top: 60px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.raisingfund > div img{
+  width: 100%;
+}
+
+.raisingfund > div{
+  width: 31%;
+}
+
+
+
+/* **************************** What clients say ********************************** */
+
+.csbox{
+  background-color: #FAFAFA;
+  margin-top: 60px;
+  padding-bottom: 170px;
+  padding-top: 120px;
+}
+
+.clientsay img{
+  width: 40%;
+}
+
+.clients{
+  padding-top: 60px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.clients > div img{
+  width: 100%;
+}
+
+.clients > div{
+  width: 31%;
+}
+
+
+
+/* **************************** Latest News ********************************** */
+
+.lnbox{
+  background-color: #FAFAFA;
+  padding-bottom: 170px;
+  padding-top: 80px;
+}
+
+.latestnews img{
+  width: 40%;
+}
+
+.latest{
+  padding-top: 80px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.latest > div img{
+  width: 100%;
+}
+
+.latest > div{
+  width: 23%;
+}
+
+
+
+
+/* **************************** Pricing ********************************** */
+
+
+/* .pricingbox{
+  background-color: #FAFAFA;
+  padding-bottom: 170px;
+  padding-top: 110px;
+} */
+
+/* .pricing img{
+  width: 40%;
+} */
+
+/* .price{
+  padding-top: 80px;
+   width: 60%;
+  display: flex;
+  align-items: center;
+   justify-content: space-between; 
+  margin: auto; 
+}  */
+
+/* .free{
+  width: 100%;
+}
+.organize{
+  width: 100%;
+  }
+  .dollar{
+  
+  }
+  .unlimited{
+  
+  } */
+
+/* 
+
+
+
+/* .price > div button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 13px;
+  padding: 9px 25px 9px 25px;
+  border: 1px solid #23A6F0;
+  background-color: #23A6F0;
+  color: #FAFAFA;
+  
+} */
+
+
+/* .price > div{
+  width: 31%;
+} */
+
+
+
+
+/* **************************** Get in touch ********************************** */
+
+.getint{
+  width: 100%;
+  height: 200px;
+  background-color: #252B42;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.getint > div {
+  width: 32%;
+}
+
+.getint > div:nth-child(1){
+  margin-left: 50px;
+}
+
+.getint > div:nth-child(2){
+  margin-right: 50px;
+}
+
+.getint > div:nth-child(1) img{
+  width: 80%;
+}
+
+.getint > div:nth-child(2) img{
+  width: 60%;
+}
+
+
+
+
+/* **************************** Footer ********************************** */
+
+.footerbox{
+  background-color: white;
+  padding-top: 100px;
+  width: 100%;
+  height: 240px;
+}
+
+.footer{
+  padding-right: 40px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.footer > div {
+  width: 23%;
+}
+
+.footer > div img{
+  width: 80%;
+}
+
+#res{
+  width: 13%;
+}
+
+#res img{
+  width: 80%;
+}
+
+
+.lastcontainer{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: #c3c0c0;
+  padding-top: 2px;
+}
+
+
+
+
+
+/* /* Media query for tablet view */ 
+@media screen and (max-width: 768px) {
+
+/* For landing page */
+
+  .landing {
+    flex-direction: column;
+  }
+
+  .landing div {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+
+  /* For better startegy */
+
+  .betterStrategy {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .betterStrategy img {
+    width: 60%;
+  }
+
+  .raisingfund {
+    width: 80%;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .raisingfund > div {
+    width: 48%; 
+    margin-bottom: 20px;
+  }
+}
+
+
+/* /* Media query for mobile view */ 
+@media screen and (max-width: 480px) {
+
+/* For landing page */
+
+  .landingpage {
+    flex-direction: column;
+  }
+
+  .landing div {
+    padding: 10px;
+  }
+
+  /* For better startegy */
+
+  .betterStrategy {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .betterStrategy img {
+    width: 80%;
+  }
+
+  .raisingfund {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .raisingfund > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
 }
