@@ -32,13 +32,44 @@ function Login() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-PushManager(input)
+
     dispatch(getLogin(input));
   };
   return (
     <DIV>
       <div className="box">
         <h1>Login</h1>
+
+        <form onSubmit={handleSubmit} className="formData">
+          <input
+            type="email"
+            name="email"
+            value={input.email}
+            onChange={handleChange}
+            placeholder="Enter email"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            value={input.password}
+            onChange={handleChange}
+            placeholder="Enter password"
+            required
+          />
+          <button>Login</button>
+          <p>
+            Don't have account{" "}
+            <Link to="/signup">
+              <span style={{ color: "red" }}>Register</span>
+            </Link>
+          </p>
+        </form>
+      </div>
+    </DIV>
+  );
+}
+
 
 const DIV = styled.div`
   width: 100%;
