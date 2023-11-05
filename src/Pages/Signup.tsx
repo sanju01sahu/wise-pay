@@ -10,20 +10,9 @@
 //   name:""
 // }
 
-import React from 'react'
 
 function Signup() {
-  return (
-    <div>Signup</div>
-  )
-}
 
-export default Signup
-
-
-
-
-// function Signup() {
 
 //   const dispatch = useDispatch();
 //   const [userData, setUserData] = useState(initialState);
@@ -84,9 +73,9 @@ export default Signup
 //         </div>
 //     </DIV>
 //   );
-// }
+}
 
-// export default Signup;
+export default Signup;
 
 // const DIV = styled.div`
 //     width: 100%;

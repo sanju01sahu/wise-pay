@@ -1,4 +1,5 @@
 import React from 'react'
+
 // import styled from 'styled-components'
 
 function Navbar() {
@@ -19,13 +20,12 @@ function Navbar() {
           <a href="/login">Login</a>
         </div>
       </div>
-
-     
     </div>
   )
 }
 
 export default Navbar
+
 
 // const DIV= styled.div`
 //   .navbar {
@@ -37,4 +37,4 @@ export default Navbar
 //   align-items: center;
 //   /* padding-left: 160px; */
 // }
-// `
+// 
