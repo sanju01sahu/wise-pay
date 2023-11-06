@@ -69,6 +69,7 @@ function Login() {
     </DIV>
   );
 }
+
 const DIV = styled.div`
   width: 100%;
   .box {
