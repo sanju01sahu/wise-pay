@@ -32,7 +32,12 @@ function Login() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    /**
+     * const obj = {...singleuserdetail}
+     * obj.transactions = [...obj['transaction'], input];
+     * dispatch(addSubscription(obj))
+     * 
+     */
     dispatch(getLogin(input));
   };
   return (
