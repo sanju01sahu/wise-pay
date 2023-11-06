@@ -17,6 +17,7 @@ const initial: LoginUser = {
 function Login() {
   const navigate = useNavigate();
   const location = useLocation();
+  const navi = useNavigate()
   const dispatch = useDispatch<AppDispatch>();
   const [input, setInput] = useState<LoginUser>(initial);
   const a = useSelector<RootState>((store)=>store.authReducer)
@@ -35,6 +36,10 @@ function Login() {
 
     dispatch(getLogin(input));
   };
+
+  const handlelog = () => {
+    navi('/subscriptions')
+  }
   return (
     <DIV>
       <div className="box">
@@ -57,7 +62,7 @@ function Login() {
             placeholder="Enter password"
             required
           />
-          <button>Login</button>
+          <button onClick={handlelog}>Login</button>
           <p>
             Don't have account{" "}
             <Link to="/signup">
