@@ -1,14 +1,16 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Landingpage from './Landingpage'
-import { TransactionPage } from './TransactionPage';
+
+import Footer from '../Components/Footer';
+
 
 function Homepage() {
   return (
     <div>
         <Navbar/>
-        <TransactionPage/>
-        {/* <Landingpage/> */}
+        <Landingpage/>
+        <Footer/>
     </div>
   )
 }

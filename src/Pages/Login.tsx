@@ -33,6 +33,12 @@ function Login() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    /**
+     * const obj = {...singleuserdetail}
+     * obj.transactions = [...obj['transaction'], input];
+     * dispatch(addSubscription(obj))
+     * 
+     */
     dispatch(getLogin(input));
   };
   return (
@@ -69,7 +75,6 @@ function Login() {
     </DIV>
   );
 }
-
 
 const DIV = styled.div`
   width: 100%;

@@ -1,5 +1,5 @@
 import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { LoginUser, SingleUser } from "../../Constants";
+import { Expenses, LoginUser, SingleUser } from "../../Constants";
 import axios from "axios";
 
 interface State {
@@ -34,6 +34,9 @@ const authSlice = createSlice({
       state.isError = false;
       state.isAuth = true;
     },
+    addSubscription: (state, action:PayloadAction<SingleUser>)=>{
+      state.user = action.payload
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -74,6 +77,11 @@ export const getLogin = createAsyncThunk(
   }
 );
 
-export const { loading, error, auth } = authSlice.actions;
+export const addSubs = (data:SingleUser)=>{
+  addSubscription(data)
+}
+
+
+export const { loading, error, auth, addSubscription} = authSlice.actions;
 
 export default authSlice.reducer;
