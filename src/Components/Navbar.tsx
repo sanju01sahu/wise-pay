@@ -11,9 +11,9 @@ function Navbar() {
       </div>
         <div className='homepage'>
         <a href="/">Home</a>
-        <a href="">Tranjactions</a>
-        <a href="">Subscriptions</a>
-        <a href="">Instructions</a>
+        <a href="">Transactions</a>
+        <a href="/subscriptions">Subscriptions</a>
+        {/* <a href="">Instructions</a> */}
         <a href="">About</a>
         </div>
         <div className='login'>
